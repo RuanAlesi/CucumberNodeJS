@@ -1,0 +1,23 @@
+{
+  "name": "CucumberNode",
+  "version": "1.0.0",
+  "description": "\"# CucumberNodeJS\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuanAlesi/CucumberNodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RuanAlesi/CucumberNodeJS/issues"
+  },
+  "homepage": "https://github.com/RuanAlesi/CucumberNodeJS#readme",
+  "devDependencies": {
+    "cucumber": "^6.0.5"
+  }
+}

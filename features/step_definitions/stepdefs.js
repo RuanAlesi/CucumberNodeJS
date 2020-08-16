@@ -1,17 +1,15 @@
 const assert = require('assert');
 const { Given, When, Then} = require('cucumber');
+const myFunctions = require('./myFunctions');
 
-Given('today is Sunday', function () {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
-  });
-
-When('I ask whether it\'s Friday yet', function () {
-// Write code here that turns the phrase above into concrete actions
-return 'pending';
+Given('today is {string}', function (givenDay) {
+    this.today = givenDay;
 });
 
-Then('I should be told {string}', function (string) {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+When('I ask whether it\'s Friday yet', function () {
+    this.actualAnswer = myFunctions.IsItFriday(this.today);
+});
+
+Then('I should be told {string}', function (expectedAnswer) {
+    assert.equal(this.actualAnswer, expectedAnswer);
 });

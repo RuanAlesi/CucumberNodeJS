@@ -19,5 +19,10 @@
   "homepage": "https://github.com/RuanAlesi/CucumberNodeJS#readme",
   "devDependencies": {
     "cucumber": "^6.0.5"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chromedriver": "^84.0.1",
+    "selenium-webdriver": "^4.0.0-alpha.7"
   }
 }
